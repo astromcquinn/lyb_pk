@@ -34,7 +34,7 @@ for i in range(nqso): #looping through each quasar filepath to load it into an a
     #OVI
     if inis.cat_name.startswith('mocks')&(inis.add_ovi):
         q.get_new_forest(rescale_flux=rescale_flux,wrange = (opt.ovi_min,opt.ovi_max,opt.ovi_rest_d1, opt.xs_ovi)) #ovi_rest_d1 = 1032
-        q.get_new_forest(rescale_flux=rescale_flux,wrange = (opt.ovi_min,opt.ovi_max,opt.ovi_rest_d2*opt.ovi_factor, opt.xs_ovi)) #ovi_rest_d2 = 1038
+        q.get_new_forest(rescale_flux=rescale_flux,wrange = (opt.ovi_min,opt.ovi_max,opt.ovi_rest_d2, opt.xs_ovi*opt.ovi_factor)) #ovi_rest_d2 = 1038
     #SiIII
     if inis.cat_name.startswith('mocks')&(inis.add_sithree):
         q.get_new_forest(rescale_flux=rescale_flux,wrange = (opt.sithree_min,opt.sithree_max,opt.sithree_rest_d1, opt.xs_sithree))
