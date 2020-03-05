@@ -226,3 +226,9 @@ save_compare_mocks_bv_path = "figures/compare_mocks_bv.pdf"
 
 save_composite_spectra = True
 save_composite_spectra_path = "figures/composite_spectra.pdf"
+
+save_quick_imaginary_ratio = True
+save_quick_imaginary_ratio_path = "figures/quick_imaginary_ratio.pdf"
+
+save_quick_plot_pk = True
+save_quick_plot_pk_path = "figures/quick_plot_pk.pdf"
